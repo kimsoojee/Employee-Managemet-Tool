@@ -1,0 +1,8 @@
+table {
+  width: 90%;
+  margin: auto;
+}
+
+::ng-deep .mat-form-field-underline  {
+  display: none;
+}

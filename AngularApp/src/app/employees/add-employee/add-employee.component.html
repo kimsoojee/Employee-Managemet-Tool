@@ -1,0 +1,59 @@
+<div class="modal fade bd-example-modal-lg" id="addEmployee" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div style="background-color: rgb(12, 64, 104);"><h2 class="modal-title" style="color: white;"> Add Employee </h2></div>
+      <div class="modal-body">
+        
+        <form #form="ngForm" (submit)="onSubmit(form)" >
+          <div class="form-group row">
+            <label for="first_name" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" #first_name="ngModel" name="first_name" [(ngModel)]="service.formData.first_name" autocomplete="none" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="last_name" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" #last_name="ngModel" name="last_name" [(ngModel)]="service.formData.last_name" autocomplete="none" >
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" #email="ngModel" name="email" [(ngModel)]="service.formData.email" autocomplete="none">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="phone_number" class="col-sm-2 col-form-label">Phone Number</label>
+            <div class="col-sm-10">
+              <input type="tel" class="form-control" pattern="[0-9]{3}.[0-9]{2}.[0-9]{3}" #phone_number="ngModel" name="phone_number" [(ngModel)]="service.formData.phone_number" autocomplete="none">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="hire_date" class="col-sm-2 col-form-label">Hire Date</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" #hire_date="ngModel" name="hire_date" [(ngModel)]="service.formData.hire_date">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="salary" class="col-sm-2 col-form-label">Salary</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" #salary="ngModel" name="salary" [(ngModel)]="service.formData.salary">
+            </div>
+          </div>
+
+          <input type="number" #job_id="ngModel" name="job_id" [(ngModel)]="service.formData.job_id" hidden>
+          <input type="number" #manager_id="ngModel" name="manager_id" [(ngModel)]="service.formData.manager_id" hidden>
+          <input type="number" #department_id="ngModel" name="department_id" [(ngModel)]="service.formData.department_id" hidden>
+          
+          <div class="d-flex justify-content-end ">
+            <button type="submit" class="btn" style="margin: 2px; background-color:mediumaquamarine" >Add</button>
+            <button type="button" class="btn" data-dismiss="modal" style="margin: 2px; background-color:mediumaquamarine" #closeBtn>Cancel</button>
+          </div>
+        </form>
+      
+      </div>
+    </div>
+  </div>
+</div>
+

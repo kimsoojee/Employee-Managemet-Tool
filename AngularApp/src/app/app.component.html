@@ -1,0 +1,53 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  Email: <input formControlName="email" /> <br />
+
+  Mobile: <input formControlName="mobile" /> <br />
+<span
+  *ngIf="(mobile.dirty || mobile.touched) && mobile.invalid && mobile.errors.required">
+  Mobile is required.
+</span>
+<span
+  *ngIf="(mobile.dirty || mobile.touched) && mobile.invalid && mobile.errors.invalidNumber">
+  Value has to be a number.
+</span>
+
+  Country:
+  <select formControlName="country">
+    <option *ngFor="let country of countries" [value]="country" >{{country}}</option >
+  </select>
+  <br />
+
+  <button type="submit" [disabled]="!contactForm.valid">Save</button>
+  <button type="reset" (click)="revert()">Revert</button>
+</form>
+ 
+
+
+<h1>Custom Validator in Template driven forms</h1>
+ 
+<h2>Template Form</h2>
+ 
+<!-- <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" novalidate>
+ 
+  <label for="numVal">Number :</label>
+ 
+  <input type="text" name="numVal" ngModel #numVal="ngModel" gteValidator gteNum="20" > 
+ 
+  <div *ngIf="!numVal.valid && (numVal.dirty ||numVal.touched)">
+    <div *ngIf="numVal.errors.gte">
+      The number should be greater than {{numVal.errors.requiredValue}}
+    </div>
+  </div>
+ 
+  <p>Is Form Valid : {{myForm.valid}} </p>
+ 
+  <p>Form  : {{ myForm.value | json}} </p>
+  <p>
+    <button type="submit" [disabled]="!myForm.valid">Submit</button>
+  </p> 
+ 
+</form> -->
+
+<!-- <div class="app">
+  <router-outlet></router-outlet>
+</div> -->

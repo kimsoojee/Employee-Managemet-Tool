@@ -1,0 +1,12 @@
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\WebApiData2.dll.config
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\WebApiData2.dll
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\WebApiData2.pdb
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\EntityFramework.dll
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\EntityFramework.SqlServer.dll
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\EntityFramework.xml
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\bin\Debug\EntityFramework.SqlServer.xml
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\obj\Debug\WebApiData2.csprojAssemblyReference.cache
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\obj\Debug\WebApiData2.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\obj\Debug\WebApiData2.csproj.CopyComplete
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\obj\Debug\WebApiData2.dll
+\\Mac\Home\Desktop\WebApiAngularApp\WebApiApp2\WebApiData2\obj\Debug\WebApiData2.pdb

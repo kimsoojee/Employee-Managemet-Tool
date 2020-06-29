@@ -1,0 +1,23 @@
+<div class="row" style="padding-top: 50px; background-color: lightgray;">
+  <div class="col-md-5 mx-auto">
+  <h2>Register</h2>
+  <div *ngIf="blur" class="" style="color: red;">
+    <i class="material-icons">error</i> {{ blur }}
+  </div>
+  <form #form="ngForm" (ngSubmit)="OnSubmit(form)">
+    <div class="form-group">
+      <input type="email" class="form-control" placeholder="Email" #Email="ngModel" name="Email" [(ngModel)]="user.Email" autocomplete="none" (blur)="OnBlur(Email.value, Email.name)" />
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password" #Password="ngModel" name="Password" [(ngModel)]="user.Password" (blur)="OnBlur(Password.value, Password.name)" />
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Confirm Password" #ConfirmPassword="ngModel" name="ConfirmPassword" [(ngModel)]="user.ConfirmPassword" (blur)="OnBlur(ConfirmPassword.value, ConfirmPassword.name)"/>
+    </div>
+    <div class="form-group">
+      <button type="button" class="btn" style="margin: 2px; background-color:mediumaquamarine" [routerLink]="['/login']">Login</button>
+      <button type="submit" class="btn" style="margin: 2px; background-color:mediumaquamarine" >Register</button>  
+    </div>
+  </form>
+</div>
+</div>
